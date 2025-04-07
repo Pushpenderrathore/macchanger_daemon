@@ -1,0 +1,14 @@
+[Unit]
+Description=Randomize MAC address at boot
+After=network-pre.target
+Before=network.target
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/change-mac.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
