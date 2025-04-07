@@ -1,22 +1,123 @@
-MIT License
+MIT License (Extended Version)
 
 Copyright (c) 2025 Pushpender Singh
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights   
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      
-copies of the Software, and to permit persons to whom the Software is          
-furnished to do so, subject to the following conditions:                       
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all 
-copies or substantial portions of the Software.                                
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+Human-Readable Summary (Not Legally Binding)
+
+This is a plain-English explanation of what you're allowed to do with the software.
+
+What You Can Do:
+- Use the software in personal, educational, and commercial projects
+- Copy and redistribute the code or your modified version
+- Study the source code and learn from it
+- Modify the code for your own needs
+- Include it in closed-source or proprietary software
+
+What You Cannot Do:
+- Remove this license when redistributing the software or your version
+- Hold the original author liable for damages or losses
+- Expect support or guarantees
+
+What “As Is” Means:
+- The author gives no warranty
+- The software may not work as expected
+- The author is not responsible for bugs, crashes, or other problems
+
+Detailed Breakdown of the License
+
+1. Permission Clause:
+You are allowed to do anything with the code, including modifying and selling it.
+
+2. Usage Rights:
+You are allowed to use the code in any kind of project, and even sublicense it under your own terms.
+
+3. Distribution Condition:
+If you distribute the original or modified code, you must keep this license with it.
+
+4. Warranty Disclaimer:
+You use the software at your own risk. The author takes no responsibility.
+
+Why MIT License Fits This Project
+
+This project (a systemd service to randomize MAC addresses on boot) benefits from the MIT License because:
+- It’s simple and permissive
+- It encourages contributions
+- It’s ideal for Linux-based tools that focus on privacy and automation
+- It allows other developers to integrate it into their projects freely
+
+Frequently Asked Questions
+
+Q: Can I use this in a commercial project?
+A: Yes, 100%.
+
+Q: Can I change the code and publish it as my own?
+A: Yes, just don’t remove the original license.
+
+Q: Do I have to open source my own project if I use this?
+A: No. The MIT license doesn’t require your own code to be open source.
+
+Q: Can I sell this software?
+A: Yes.
+
+Q: Do I need to credit the original author?
+A: It's not required but appreciated.
+
+Contributing
+
+If you contribute code:
+- You still own your contribution
+- By contributing, you agree to license your work under the MIT license
+
+Security Notice
+
+This tool modifies system-level network interface addresses. Use only on devices you own or have permission to control.
+
+Use this responsibly.
+
+About International Use
+
+MIT is globally recognized and widely used in:
+- Node.js
+- React
+- Python libraries
+- .NET Core
+- Linux utilities
+
+Author Note
+
+This license and project are intended to promote openness, freedom, and education. The author encourages others to contribute, adapt, and innovate with this tool.
+
+TL;DR
+
+You can:
+- Use it
+- Change it
+- Share it
+- Sell it
+
+You must:
+- Keep the license
+
+You can’t:
+- Blame the author for problems
 
