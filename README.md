@@ -17,28 +17,28 @@ This project sets up a systemd service that **randomizes your MAC address at sys
 ```bash
 sudo pacman -S macchanger
 
-### 2. Clone this repo
+#Clone this repo
 
 git clone https://github.com/yourusername/macchanger-daemon.git
 cd macchanger-daemon
 
-### 3. Copy files to appropriate locations
+#Copy files to appropriate locations
 
 sudo cp change-mac.sh /usr/local/bin/change-mac.sh
 sudo chmod +x /usr/local/bin/change-mac.sh
 sudo cp macchanger.service /etc/systemd/system/macchanger.service
 
-### 4. Enable the service
+#Enable the service
 
 sudo systemctl daemon-reload
 sudo systemctl enable macchanger.service
 sudo systemctl start macchanger.service
 
-## 🔁 Want to randomize MAC every 30 minutes?
+# 🔁 Want to randomize MAC every 30 minutes?
 
 - Create a systemd timer! (Coming soon in this repo)
 
-## ✨ Contributions Welcome
+# ✨ Contributions Welcome
 
 - Support for more interfaces?
 
