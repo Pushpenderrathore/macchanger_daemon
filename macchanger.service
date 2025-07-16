@@ -5,9 +5,9 @@ Before=network.target
 Wants=network-pre.target
 
 [Service]
-Type=oneshot
+Type=simple
 ExecStart=/usr/local/bin/change-mac.sh
-RemainAfterExit=yes
+restart=always
 
 [Install]
 WantedBy=multi-user.target
