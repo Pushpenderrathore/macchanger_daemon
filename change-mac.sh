@@ -11,9 +11,7 @@ while true; do
         for iface in $interfaces; do
             echo "[+] Changing MAC for interface: $iface"
         
-            sudo ip link set "$iface" down
-            sudo macchanger -r "$iface"
-            sudo ip link set "$iface" up
+            sudo ip link set "$iface" down && sudo macchanger -r "$iface" && sudo ip link set "$iface" up
         done
 
         echo "[+] Waiting 5 minutes before next change..."
