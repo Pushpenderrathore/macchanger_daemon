@@ -1,6 +1,6 @@
 # MAC Address Randomizer Daemon for Linux-based Systems
 
-This project sets up a systemd service that **randomizes your MAC address at system boot** for all type of network interfaces like (`enp7s0` and `wlp13s0`). It uses [`macchanger`](https://github.com/alobbs/macchanger) and works on **Arch Linux** or any `systemd`-based distro.
+This project sets up a systemd service that **randomizes your MAC address at system boot** for all type of network interfaces like (`enp7s0` and `wlp13s0`). It uses [`macchanger`](https://github.com/alobbs/macchanger) and works on **Arch Linux** or any `systemd` linux-based distro.
 
 ## 🛡️ Why Use It?
 
