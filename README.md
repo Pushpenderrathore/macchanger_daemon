@@ -1,12 +1,12 @@
-# MAC Address Randomizer Daemon for Arch Linux
+# MAC Address Randomizer Daemon for Linux-based Systems
 
-This project sets up a systemd service that **randomizes your MAC address at system boot** for two network interfaces (`enp7s0` and `wlp13s0`). It uses [`macchanger`](https://github.com/alobbs/macchanger) and works on **Arch Linux** or any `systemd`-based distro.
+This project sets up a systemd service that **randomizes your MAC address at system boot** for all type of network interfaces like (`enp7s0` and `wlp13s0`). It uses [`macchanger`](https://github.com/alobbs/macchanger) and works on **Arch Linux** or any `systemd`-based distro.
 
 ## 🛡️ Why Use It?
 
-- Improve privacy by changing your MAC on every boot.
+- Improve privacy by changing your MAC on every boot and with interval of every 5 minutes.
 - Spoof MAC address to avoid tracking on public networks.
-- Lightweight and runs automatically.
+- Lightweight and portable on any linux based devices and runs automatically.
 
 ---
 
@@ -15,7 +15,10 @@ This project sets up a systemd service that **randomizes your MAC address at sys
 ### 1. Install macchanger
 
 ```bash
-sudo pacman -S macchanger
+
+### For manual installation.  
+
+sudo pacman -S macchanger 
 
 ### 2. Clone this repo
 
@@ -36,7 +39,7 @@ sudo systemctl start macchanger.service
 
 ## 🔁 Want to randomize MAC every 30 minutes?
 
-- Create a systemd timer! (Coming soon in this repo)
+- Create a systemd timer now available for linux based distros 
 
 ## ✨ Contributions Welcome
 
