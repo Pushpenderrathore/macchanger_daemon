@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# MAC Randomizer Script
+# MAC Randomizer Script - Dynamically detects interfaces and randomizes their MAC
 
 while true; do
-	echo "[+] Changing MAC address.."
+	echo "[+] Changing MAC address.. change loop..."
 
-        # Interface 1
-        ip link set enp7s0 down
-        macchanger -r enp7s0
-        ip link set enp7s0 up
+        # List all interfaces except 'lo' (loopback)
+        interfaces=$(ip -o link show | awk -F': ' '{print $2}' | grep -v lo)
+        
+        for iface in $interfaces; do
+            echo "[+] Changing MAC for interface: $iface"
+        
+            sudo ip link set "$iface" down
+            sudo macchanger -r "$iface"
+            sudo ip link set "$iface" up
+        done
 
-        # Interface 2
-        ip link set wlan0 down
-        macchanger -r wlan0
-        ip link set wlan0 up
-
-        echo "[+] MAC addresses changed. Waiting 5 minutes..."
+        echo "[+] Waiting 5 minutes before next change..."
         sleep 300 # 300 seconds = 5 minutes
 done
-
