@@ -17,6 +17,11 @@ change_mac() {
          sudo ip link set "$iface" down        
          sudo macchanger -r "$iface"
          sudo ip link set "$iface" up
+         
+         
+         # 🔽 Log the change
+         mac=$(ip link show "$iface" | grep ether | awk '{print $2}') 
+         echo "$(date): $iface MAC changed to: $mac" >> /var/log/macchanger.log
      done
 }
 
