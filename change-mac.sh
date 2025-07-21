@@ -2,6 +2,9 @@
 
 # MAC Address Watcher - Changes MAC address every 5 minutes and on internet reconnection 
 
+VERSION="v1.0.0"
+echo "[macchanger-daemon $VERSION] Starting..."
+
 INTERVAL=300  # 5 minutes 
 CHECK_HOST="1.1.1.1"  # Cloudflare DNS for connectivity check 
 PREV_STATUS=connected 
