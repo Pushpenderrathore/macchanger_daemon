@@ -1,16 +1,18 @@
 #!/bin/bash
 
-cp change-mac.sh /usr/local/bin/
+sudo echo "Optimising Your system...."
 
-cp macchanger.service /etc/systemd/system/
+sudo cp change-mac.sh /usr/local/bin/
 
-systemctl daemon-reexec
+sudo cp macchanger.service /etc/systemd/system/
 
-systemctl daemon-reload
+sudo systemctl daemon-reexec
 
-systemctl enable macchanger.service
+sudo systemctl daemon-reload
 
-systemctl start macchanger.service
+sudo systemctl enable macchanger.service
+
+sudo systemctl start macchanger.service
 
 sudo echo "[✔] MAC randomizer service installed and running."
 
