@@ -49,8 +49,6 @@ sudo systemctl start macchanger.service
 
 - Support for more interfaces?
 
-- Logs?
-
 - AUR package?
 
 - Cross-platform support?
