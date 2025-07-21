@@ -21,7 +21,8 @@ change_mac() {
          
          # 🔽 Log the change
          mac=$(ip link show "$iface" | grep ether | awk '{print $2}') 
-         echo "$(date): $iface MAC changed to: $mac" >> /var/log/macchanger.log
+         echo "$(date): $iface MAC changed to: $mac" | sudo tee -a /var/log/macchanger.log > /dev/null
+     
      done
 }
 
