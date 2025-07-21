@@ -29,7 +29,7 @@ change_mac() {
 last_change_time=0 
 
 while true; do
-     current_time=$(date +%s)
+     current_time=$(date +%s);
      # Internet connectivity check
      ping -c 1 -W 1 "$CHECK_HOST" &>/dev/null
      if [[ $? -eq 0 ]]; then
