@@ -35,7 +35,7 @@ This Code of Conduct applies to all project spaces, including issues, pull reque
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening an issue or contacting the maintainers directly at:
 
-**Email:** pushpendersingh.dev@example.com  
+**Email:** pushpendersingh046@gmail.com  
 *(Replace with your real contact if you want)*
 
 All complaints will be reviewed and investigated and will result in a response deemed necessary and appropriate to the circumstances.
