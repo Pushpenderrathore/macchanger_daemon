@@ -8,19 +8,17 @@
 This project sets up a systemd service that **randomizes your MAC address at system boot** for all type of network interfaces like (`enp7s0` and `wlp13s0`). It uses [`macchanger`](https://github.com/alobbs/macchanger) and works on **Arch Linux** or any `systemd` linux-based distro.
 
 ## 🛡️ Why Use It?
-
 - Improve privacy by changing your MAC on every boot and with interval of every 5 minutes.
 - Spoof MAC address to avoid tracking on public networks.
 - Lightweight and portable on any linux based devices and runs automatically.
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Install macchanger
 
 ```bash
-
 ### For manual installation.  
 sudo pacman -S macchanger 
 
@@ -72,29 +70,20 @@ This will run the same MAC randomization logic and can be daemonized with cron o
 Create a systemd timer unit like macchanger.timer and adjust the interval. See docs/timer-example.md for reference (coming soon).
 📄 Files in This Repo
 
-    change-mac.sh – core script
-
-    macchanger.service – systemd service
-
-    setup.py – for PyPI packaging
-
-    requirements.txt – Python dependencies (if any)
-
-    install.sh – one-click setup script
-
-    macchanger-daemon – optional CLI stub
-
-    CODE_OF_CONDUCT.md – community guidelines
-
-    LICENSE – MIT License
+change-mac.sh – core script
+macchanger.service – systemd service
+setup.py – for PyPI packaging
+requirements.txt – Python dependencies (if any)
+install.sh – one-click setup script
+macchanger-daemon – optional CLI stub
+CODE_OF_CONDUCT.md – community guidelines
+LICENSE – MIT License
 
 🤝 Contributing
 
-    Add support for more distros or interfaces
-
-    Turn into full Python daemon
-
-    Improve logging & error handling
+Add support for more distros or interfaces
+Turn into full Python daemon
+Improve logging & error handling
 
 PRs are welcome!
 📢 Maintained by
