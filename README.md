@@ -65,31 +65,45 @@ Then run:
 macchanger-daemon
 
 This will run the same MAC randomization logic and can be daemonized with cron or systemd timer.
+
 🔁 Want to randomize every 30 minutes?
 
 Create a systemd timer unit like macchanger.timer and adjust the interval. See docs/timer-example.md for reference (coming soon).
+
 📄 Files in This Repo
 
 change-mac.sh – core script
+
 macchanger.service – systemd service
+
 setup.py – for PyPI packaging
+
 requirements.txt – Python dependencies (if any)
+
 install.sh – one-click setup script
+
 macchanger-daemon – optional CLI stub
+
 CODE_OF_CONDUCT.md – community guidelines
+
 LICENSE – MIT License
 
 🤝 Contributing
 
 Add support for more distros or interfaces
+
 Turn into full Python daemon
+
 Improve logging & error handling
 
 PRs are welcome!
+
 📢 Maintained by
 
 Pushpenderrathore
+
 GitHub: @Pushpenderrathore
+
 📬 License
 
 This project is licensed under the MIT License.
