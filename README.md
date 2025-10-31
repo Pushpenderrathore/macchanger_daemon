@@ -54,7 +54,7 @@ sudo systemctl start macchanger.service
 
 🐍 Python (via pip)
 
-    📌 Coming Soon: Once published to PyPI
+> 📌 Coming Soon: Once published to PyPI
 
 Install with:
 
