@@ -37,7 +37,7 @@ sudo cp macchanger.service /etc/systemd/system/macchanger.service
 sudo systemctl daemon-reload
 sudo systemctl enable macchanger.service
 sudo systemctl start macchanger.service
-'''
+```
 
 ## 🔁 Want to randomize MAC every 30 minutes?
 - Create a systemd timer now available for linux based distros 
